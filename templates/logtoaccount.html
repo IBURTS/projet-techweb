@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block title %}
+<title>LOGIN FORM</title>
+<script>
+    function validateForm() {
+        var form = document.getElementById("UserForm1");
+        if (form.checkValidity()) {
+            return true;
+        } else {
+            alert("Please fill out all the required fields.");
+            return false;
+        }
+    }
+</script>
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="col-md-6 offset-md-3">
+        <h1>Form</h1>
+        <p>In order to join our prayer group's website you first need to complete this form.</p>
+        <form id ="UserForm1" method="POST" onsubmit="return validateForm();" action="{{ url_for('connect_user') }}">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name :</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Password :</label>
+                <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>   
+            <br>
+            <div class = "text-center">
+                <button type="submit" action="{{url_for('connect_user')}}" class="btn btn-info">Log In</button>                
+            </div>     
+            <br>
+            <div class="text-center">
+                <a>Don't have an account yet ?</a>
+                <a href="{{url_for('logIn')}}"> click here</a>
+            </div> 
+            <br>
+        </form>
+    </div>    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"> </script>
+{% endblock %}

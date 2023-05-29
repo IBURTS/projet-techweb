@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block title %}
+<title>HOME</title>
+{% endblock %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand text-secondary" href="#">Hamster-Salmon prayer group</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="{{url_for('goToAccount')}}">Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="{{url_for('logout')}}">Log out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class = "col-md-4">
+            <div class="card">
+                <a href='#footnote1'>
+                    <img class = "card-img-top" src = "{{url_for('static',filename='images/photo-livres.png')}}" width = "100" height ="250">
+                </a>
+                <div class ="container">
+                    <h3 card-title class = "text-justify">Books</h3>
+                    <p>All the greatness and knowledge of our <br>
+                    animal deities can be found down on earth<br>
+                    in the writtings of our lords !</p>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-4">
+            <div class="card">
+                <a href = '#footnote2'><img class = "card-img-top">
+                    <img class = "card-img-top" src = "{{url_for('static',filename='images/Tshirt_HSC.png')}}" width = "100" height ="225">
+                </a>
+                <div class ="container">
+                    <h3 card-title class = "text-justify">Products</h3>
+                    <p>description<br>hello i am a description<br>hahaha trop drôle (pas vrai la team)</p>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-4">
+            <div class="card">
+                <a href = '#footnote3'>
+                    <img class = "card-img-top" src = "{{url_for('static', filename='images/photo-alternative-2-formations.png')}}"width = "100" height ="250">
+                </a>
+                <div class ="container">
+                    <h3 card-title class = "text-justify">Spiritual Formations</h3>
+                    <p>It is always time to learn...<br>
+                    About our lords and saviors !<br>
+                    So sign  up right now to one of our spiritual formations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "aboutSH">
+        <br>
+        <h3> About the Salmon-Hamster</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nunc quis neque elementum, sed fringilla nisi fringilla. Vestibulum tincidunt elit quis metus consequat, vitae viverra erat efficitur. Cras vitae lacinia sapien. Pellentesque sagittis arcu vel velit posuere, id eleifend libero dictum. Mauris venenatis nulla id bibendum varius. Sed ut mi ac tellus finibus congue. Integer gravida metus at eros vestibulum, at tincidunt libero convallis. Proin efficitur urna nec justo consectetur, et luctus urna imperdiet. Aliquam sit amet turpis at justo tincidunt pulvinar. Aenean nec metus ut orci sollicitudin gravida vel non risus. Mauris ut ipsum dignissim, venenatis lectus ac, facilisis turpis. Suspendisse rutrum lorem at lectus iaculis consectetur.</p>
+    </div>
+    <div>
+        <div id = "footnote1" class = "BooksShop">
+            <br><br><br>
+            <h3> Books</h3>
+            <p style="font-style: italic;">All the books you'll ever need are in this section</p>
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--IMAGES DES PRODUITS-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nunc quis neque elementum, sed fringilla nisi fringilla. Vestibulum tincidunt elit quis metus consequat, vitae viverra erat efficitur. Cras vitae lacinia sapien. Pellentesque sagittis arcu vel velit posuere, id eleifend libero dictum. Mauris venenatis nulla id bibendum varius. Sed ut mi ac tellus finibus congue. Integer gravida metus at eros vestibulum, at tincidunt libero convallis. Proin efficitur urna nec justo consectetur, et luctus urna imperdiet. Aliquam sit amet turpis at justo tincidunt pulvinar. Aenean nec metus ut orci sollicitudin gravida vel non risus. Mauris ut ipsum dignissim, venenatis lectus ac, facilisis turpis. Suspendisse rutrum lorem at lectus iaculis consectetur.
+
+                <br>Praesent tincidunt velit nec diam vulputate cursus. Phasellus dignissim turpis vitae vestibulum aliquet. Nam non orci elit. Sed dictum nibh nec varius euismod. Etiam interdum dolor sed tortor congue, ut scelerisque velit iaculis. Nulla hendrerit sapien ac congue cursus. Pellentesque lacinia leo id erat condimentum dictum. Vestibulum sit amet augue hendrerit, vehicula dui eu, aliquet sapien. Nunc consectetur metus et aliquet rhoncus. In ultricies eros sit amet mi iaculis, sit amet varius ligula ultrices. Integer finibus augue eget posuere lacinia.
+                
+                <br>Vivamus non felis in tellus eleifend gravida. Sed eleifend eros eget diam tincidunt ullamcorper. Morbi finibus lorem id ligula tincidunt, ac egestas purus rutrum. Duis vulputate erat ac feugiat sollicitudin. Vestibulum a odio et enim ullamcorper ullamcorper. Integer auctor sapien eu enim ultrices, eu gravida urna bibendum. Sed sollicitudin ipsum a mi maximus, id posuere risus pellentesque. Sed eu cursus sem, nec semper nunc. Morbi iaculis elit nec lorem sagittis, ac varius felis congue. In luctus leo vitae lectus eleifend iaculis. Etiam eleifend urna eget nulla faucibus, ac feugiat massa consequat. Mauris quis nunc id velit mattis tincidunt. Suspendisse interdum massa ac odio euismod feugiat. Donec scelerisque est nec arcu eleifend dignissim.</p>
+                <br><a href = "{{url_for('goToAchat')}}">Proceed to purchase</a>
+        </div>
+        <div id = "footnote2" class = "GoodiesShop">
+            <br><br><br>
+            <h3> Products</h3>
+            <p  style="font-style: italic;">Show to others that you're part of something special</p>
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->            
+            <!--IMAGES DES PRODUITS-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nunc quis neque elementum, sed fringilla nisi fringilla. Vestibulum tincidunt elit quis metus consequat, vitae viverra erat efficitur. Cras vitae lacinia sapien. Pellentesque sagittis arcu vel velit posuere, id eleifend libero dictum. Mauris venenatis nulla id bibendum varius. Sed ut mi ac tellus finibus congue. Integer gravida metus at eros vestibulum, at tincidunt libero convallis. Proin efficitur urna nec justo consectetur, et luctus urna imperdiet. Aliquam sit amet turpis at justo tincidunt pulvinar. Aenean nec metus ut orci sollicitudin gravida vel non risus. Mauris ut ipsum dignissim, venenatis lectus ac, facilisis turpis. Suspendisse rutrum lorem at lectus iaculis consectetur.
+
+                <br>Praesent tincidunt velit nec diam vulputate cursus. Phasellus dignissim turpis vitae vestibulum aliquet. Nam non orci elit. Sed dictum nibh nec varius euismod. Etiam interdum dolor sed tortor congue, ut scelerisque velit iaculis. Nulla hendrerit sapien ac congue cursus. Pellentesque lacinia leo id erat condimentum dictum. Vestibulum sit amet augue hendrerit, vehicula dui eu, aliquet sapien. Nunc consectetur metus et aliquet rhoncus. In ultricies eros sit amet mi iaculis, sit amet varius ligula ultrices. Integer finibus augue eget posuere lacinia.
+                
+                <br>Vivamus non felis in tellus eleifend gravida. Sed eleifend eros eget diam tincidunt ullamcorper. Morbi finibus lorem id ligula tincidunt, ac egestas purus rutrum. Duis vulputate erat ac feugiat sollicitudin. Vestibulum a odio et enim ullamcorper ullamcorper. Integer auctor sapien eu enim ultrices, eu gravida urna bibendum. Sed sollicitudin ipsum a mi maximus, id posuere risus pellentesque. Sed eu cursus sem, nec semper nunc. Morbi iaculis elit nec lorem sagittis, ac varius felis congue. In luctus leo vitae lectus eleifend iaculis. Etiam eleifend urna eget nulla faucibus, ac feugiat massa consequat. Mauris quis nunc id velit mattis tincidunt. Suspendisse interdum massa ac odio euismod feugiat. Donec scelerisque est nec arcu eleifend dignissim.</p>       
+                <br><a href = "">Proceed to purchase</a>
+            </div>
+        <div id = "footnote3" class = "SpiritualFormations">
+            <br><br><br>
+            <h3> Spiritual Formations</h3>
+            <p style="font-style: italic;">Reinforce your knowledge and learn the real way of life</p>
+            <!--<img class = "card-img-top" src = "{{url_for('static', filename='images/#########.png')}}">-->
+            <!--GRANDE IMAGE EN ARRIèRE DU TEXTE MAYBE-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nunc quis neque elementum, sed fringilla nisi fringilla. Vestibulum tincidunt elit quis metus consequat, vitae viverra erat efficitur. Cras vitae lacinia sapien. Pellentesque sagittis arcu vel velit posuere, id eleifend libero dictum. Mauris venenatis nulla id bibendum varius. Sed ut mi ac tellus finibus congue. Integer gravida metus at eros vestibulum, at tincidunt libero convallis. Proin efficitur urna nec justo consectetur, et luctus urna imperdiet. Aliquam sit amet turpis at justo tincidunt pulvinar. Aenean nec metus ut orci sollicitudin gravida vel non risus. Mauris ut ipsum dignissim, venenatis lectus ac, facilisis turpis. Suspendisse rutrum lorem at lectus iaculis consectetur.
+
+                <br>Praesent tincidunt velit nec diam vulputate cursus. Phasellus dignissim turpis vitae vestibulum aliquet. Nam non orci elit. Sed dictum nibh nec varius euismod. Etiam interdum dolor sed tortor congue, ut scelerisque velit iaculis. Nulla hendrerit sapien ac congue cursus. Pellentesque lacinia leo id erat condimentum dictum. Vestibulum sit amet augue hendrerit, vehicula dui eu, aliquet sapien. Nunc consectetur metus et aliquet rhoncus. In ultricies eros sit amet mi iaculis, sit amet varius ligula ultrices. Integer finibus augue eget posuere lacinia.
+                
+                <br>Vivamus non felis in tellus eleifend gravida. Sed eleifend eros eget diam tincidunt ullamcorper. Morbi finibus lorem id ligula tincidunt, ac egestas purus rutrum. Duis vulputate erat ac feugiat sollicitudin. Vestibulum a odio et enim ullamcorper ullamcorper. Integer auctor sapien eu enim ultrices, eu gravida urna bibendum. Sed sollicitudin ipsum a mi maximus, id posuere risus pellentesque. Sed eu cursus sem, nec semper nunc. Morbi iaculis elit nec lorem sagittis, ac varius felis congue. In luctus leo vitae lectus eleifend iaculis. Etiam eleifend urna eget nulla faucibus, ac feugiat massa consequat. Mauris quis nunc id velit mattis tincidunt. Suspendisse interdum massa ac odio euismod feugiat. Donec scelerisque est nec arcu eleifend dignissim.</p>         
+                <br><a href = "" class ="info" >Proceed to purchase</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
